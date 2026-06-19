@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="18dp" />
+
+        <EditText
+            android:id="@+id/txtNombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Nombre"
+            android:inputType="textPersonName"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtApellidosRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Apellidos"
+            android:inputType="textPersonName"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtNickRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="NickName"
+            android:inputType="text"
+            android:drawableStart="@android:drawable/ic_menu_myplaces"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtCorreoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Correo electrónico"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@android:drawable/ic_dialog_email"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtTelefonoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Número de teléfono"
+            android:inputType="phone"
+            android:drawableStart="@android:drawable/ic_menu_call"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="9"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtPasswordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawableEnd="@android:drawable/ic_menu_view"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <EditText
+            android:id="@+id/txtConfirmarPasswordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Confirmar contraseña"
+            android:inputType="textPassword"
+            android:drawableStart="@android:drawable/ic_lock_lock"
+            android:drawableEnd="@android:drawable/ic_menu_view"
+            android:drawablePadding="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="12dp"
+            android:maxLength="40"
+            android:paddingEnd="12dp"
+            android:background="@android:drawable/edit_text" />
+
+        <Button
+            android:id="@+id/btnCrearCuenta"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Crear cuenta"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:id="@+id/txtIrLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Ya tienes una cuenta? Inicia sesión"
+            android:textColor="#1976D2"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nueva Publicación"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginBottom="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Encabezado"
+            android:textSize="13sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txtTituloPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="Título"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:maxLength="30"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción"
+            android:textSize="13sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txtDescripcionPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="Descripción"
+            android:textSize="13sp"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:maxLines="3"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imagen"
+            android:textSize="13sp"
+            android:textColor="#000000" />
+
+        <EditText
+            android:id="@+id/txtImagenPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:hint="URL de imagen"
+            android:textSize="13sp"
+            android:inputType="textUri"
+            android:background="@android:drawable/edit_text" />
+
+        <ImageView
+            android:id="@+id/imgPreviewPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_marginTop="10dp"
+            android:background="#EEEEEE"
+            android:padding="6dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:id="@+id/btnPublicarNuevaPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Publicar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#1976D2" />
+
+        <Button
+            android:id="@+id/btnCancelarPublicacion"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Cancelar"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</ScrollView>

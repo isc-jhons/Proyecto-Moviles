@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".inicio">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿Qué necesitas para tu hogar?"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <GridLayout
+        android:id="@+id/gridCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="10dp"
+        android:useDefaultMargins="true" />
+
+    <Button
+        android:id="@+id/btnMapa"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="12dp"
+        android:backgroundTint="#1976D2"
+        android:text="Ver tiendas y técnicos cercanos"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Publicaciones"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/listaPublicacionesInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+</LinearLayout>

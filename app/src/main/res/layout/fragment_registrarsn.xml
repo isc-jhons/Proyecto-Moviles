@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Tienda o Servicio"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:background="#000000"
+            android:padding="2dp"
+            android:layout_marginBottom="14dp">
+
+            <TextView
+                android:id="@+id/tabNegocio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Negocio"
+                android:textColor="#FFFFFF"
+                android:background="#1976D2"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tabServicio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Servicio"
+                android:textColor="#000000"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutNegocio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Ingrese RUC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtRuc"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Razón social / Nombre Comercial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtRazonSocial"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Descripción"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="top"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Número de WhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Número de Teléfono o Fijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtTelefono"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Referencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtReferencia"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Coordenada GPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtCoordenadaGps"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:focusable="false"
+                android:drawableEnd="@android:drawable/ic_dialog_map"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Imagen Banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtImagenUrl"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="URL de imagen"
+                android:inputType="textUri"
+                android:background="@android:drawable/edit_text" />
+
+            <ImageView
+                android:id="@+id/imgBannerPreview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="#EEEEEE"
+                android:padding="6dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <TextView
+                android:text="Horario de atención"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <Spinner
+                    android:id="@+id/spinnerDia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerHoraInicio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerHoraFin"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnAgregarHorario"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:text="+" android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listaHorarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btnRegistrarNegocio"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Registrar Negocio"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#1976D2"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutServicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:text="DNI / CE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtDniServicio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="number"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Especialidad y experiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinnerEspecialidad"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.3" />
+
+                <EditText
+                    android:id="@+id/txtTiempoExperiencia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.7"
+                    android:inputType="number"
+                    android:hint="N°"
+                    android:gravity="center"
+                    android:background="@android:drawable/edit_text" />
+
+                <Spinner
+                    android:id="@+id/spinnerTipoExperiencia"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnAgregarEspecialidad"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listaEspecialidades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:text="Número de WhatsApp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/txtWhatsappServicio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Número de Teléfono o Fijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtTelefonoServicio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:inputType="phone"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Coordenada GPS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <EditText
+                android:id="@+id/txtDireccionServicio"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:focusable="false"
+                android:drawableEnd="@android:drawable/ic_dialog_map"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Horario de atención"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <Spinner
+                    android:id="@+id/spinnerDiaServicio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerHoraInicioServicio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <Spinner
+                    android:id="@+id/spinnerHoraFinServicio"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/btnAgregarHorarioServicio"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:text="+"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/listaHorariosServicio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:text="Descripción"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/txtDescripcionServicio"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="top"
+                android:background="@android:drawable/edit_text" />
+
+            <TextView
+                android:text="Imagen Banner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" />
+
+            <EditText
+                android:id="@+id/txtImagenServicio"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="URL de imagen"
+                android:inputType="textUri"
+                android:background="@android:drawable/edit_text" />
+
+            <ImageView
+                android:id="@+id/imgServicioPreview"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:layout_marginTop="10dp"
+                android:background="#EEEEEE"
+                android:padding="6dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_gallery" />
+
+            <Button
+                android:id="@+id/btnRegistrarServicioFinal"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Registrar servicio"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#6F50B5"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
