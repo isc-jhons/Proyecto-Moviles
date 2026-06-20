@@ -1,29 +1,3 @@
 {
-  "project_info": {
-    "project_number": "17541107427",
-    "project_id": "proy-moviles-2f09e",
-    "storage_bucket": "proy-moviles-2f09e.firebasestorage.app"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:17541107427:android:1b732f73370c6d90c6ffd6",
-        "android_client_info": {
-          "package_name": "com.example.proy_moviles"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCEjYUfthFHdoftTJC9lEu_upRCh5G_RLs"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
+  "project_info": "Este archivo debe ser modificado, con el archivo de configuración generado en el FIREBASE, para obtener la API de Google Maps."
 }
