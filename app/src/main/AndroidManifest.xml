@@ -16,7 +16,7 @@
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBYV4Jr-bDegNW2uMSfvhCQQsFmvkowbAM" />
+            android:value="AIza..." /> // Agregar la API de Google Maps generado en el FIREBASE.
         <activity
             android:name=".MainActivity"
             android:exported="true">
