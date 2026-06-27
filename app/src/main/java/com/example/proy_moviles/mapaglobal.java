@@ -426,7 +426,7 @@ public class mapaglobal extends Fragment implements OnMapReadyCallback {
     }
     private void obtenerRutaDirections(LatLng origen, LatLng destino) {
 
-        String apiKey = "AIza..."; //Agregar la API generado en la configuración del FIREBASE.
+        String apiKey = "AIza..."; //Agregar la API de Google Maps (Maps SDK for Android).
 
         String url =
                 "https://maps.googleapis.com/maps/api/directions/json?"
