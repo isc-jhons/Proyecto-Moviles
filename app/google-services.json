@@ -1,3 +1,29 @@
 {
-  "project_info": "Este archivo debe ser modificado, con el archivo de configuración generado en el FIREBASE, para obtener la API de Google Maps."
+  "project_info": {
+    "project_number": "17...",
+    "project_id": "proy-moviles...",
+    "storage_bucket": "proy-moviles....firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17541107427:android:1b732f73370c6d90c6ffd6",
+        "android_client_info": {
+          "package_name": "com.example.proy_moviles"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIza..." // En esta linea se debe agregar la API de Google Maps (Maps SDK for Android) tras la configuracion en Google Cloud.
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
 }
